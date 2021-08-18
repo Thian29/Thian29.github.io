@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(../font/Raleway-VariableFont_wght.ttf);
+}
+body{
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin-bottom: 1.5em;
+    margin-left: 60px;
+    text-align: justify;
+}
+.grid-container{
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+        "header header header header"
+        "contenido contenido contenido contenido"
+        "contenido contenido contenido contenido"
+        "izquierda derecha aside aside"
+        "footer footer footer footer"
+        "footer footer footer footer";
+}
+/*header, main, aside, footer, .divIzquierda, .divDerecha{
+    background-color: #e4dede;
+    padding: 20px;
+    border-radius: 4px;
+}*/
+.fondo{
+    background-color: #e4dede;
+    padding: 20px;
+    border-radius: 4px;
+}
+header{
+    background-color: #333 !important;
+    color: white;
+    grid-area: header;
+    padding: 2rem 0;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.4em;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img{
+    width: 130px;
+    filter: drop-shadow(5px 5px 2px rgb(255, 255, 255));
+}
+.navegacion{
+    display: contents;
+}
+.navegacion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    float: right;
+}
+.navegacion a{
+    background-color: #333;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    color: white;
+}
+.navegacion a:hover{
+    background-color: purple;
+}
+.navegacion ul li ul{
+    display: none;
+
+}
+.navegacion ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navegacion li:hover >ul{
+    display: block;
+}
+.img_1{
+    width: 350px;
+}
+.img_2{
+    width: 350px;
+}
+.img_3{
+    width: 350px;
+}
+.img_4{
+    width: 350px;
+}
+.img_5{
+    width: 350px;
+}
+.border_1{
+    border: 4px solid purple;
+}
+main{
+    background-color: #e4dede !important;
+    grid-area: contenido;
+    padding-top: 2rem;
+}
+.vid{
+    line-height: 1.3em;
+    font-size: 2rem;
+    text-align: justify;
+}
+.line-vid{
+    border: 4px solid #f37022;
+}
+div.galeria{
+    /*margin: 10px 20px;*/
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgb(177, 104, 192), 0 6px 20px 0 black ;
+    /* float:left; */
+    display: inline-block;
+    width: 300px;
+}
+
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+div.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    padding: 1px;
+}
+aside{
+    background-color: lightgreen !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: aside;
+}
+.divDerecha{
+    grid-area: derecha;
+}
+.divIzquierda{
+    grid-area: izquierda;
+}
+footer{
+    height: 40px;
+    background-color: black !important;
+    color: white;
+    grid-area: footer;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+}
+@media(max-width:600px){
+    .grid-container{
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        justify-content: center;
+        grid-gap: 20px;
+        grid-template-columns: repeat(4, 20%);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+        "header header header header"
+        "contenido contenido contenido contenido"
+        "contenido contenido contenido contenido"
+        "aside aside aside aside"
+        "izquierda izquierda izquierda izquierda"
+        "derecha derecha derecha derecha"
+        "footer footer footer footer"
+        "footer footer footer footer";
+    }
+    /*.FlexBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+    .FlexBox_1{
+        display: block;
+    }*/
+}
