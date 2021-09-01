@@ -2,17 +2,57 @@
     font-family: "Raleway";
     src: url(../font/Raleway-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: "Poiret-One";
+    src:url(../font/PoiretOne-Regular.ttf)
+}
 body{
     font-family: "Raleway";
     margin: 0;
     padding: 0;
+    font-size: 1rem;
+    line-height: 1.1em;
 }
 p{
     margin-bottom: 1.5em;
     margin-left: 60px;
     text-align: justify;
 }
-.grid-container{
+.principio{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+.linea{
+    border: 4px solid purple;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.center{
+    text-align: center;
+}
+.galeria{
+    width: 250px;
+}
+.flex-container-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-hijo{
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgb(145, 38, 145), 0 6px 20px 0 black;
+}
+.flex-hijo img{
+    width: 100%;
+    height: auto;
+}
+.flex-hijo p{
+    text-align: justify;
+}
+/*.grid-container{
     width: 90%;
     margin: 20px auto;
     display: grid;
@@ -27,7 +67,7 @@ p{
         "izquierda derecha aside aside"
         "footer footer footer footer"
         "footer footer footer footer";
-}
+}*/
 /*header, main, aside, footer, .divIzquierda, .divDerecha{
     background-color: #e4dede;
     padding: 20px;
@@ -36,7 +76,7 @@ p{
 .fondo{
     background-color: #e4dede;
     padding: 20px;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
 }
 header{
     background-color: #333 !important;
@@ -67,6 +107,7 @@ header a{
     list-style: none;
     display: flex;
     float: right;
+    margin-right: 50px;
 }
 .navegacion a{
     background-color: #333;
@@ -85,11 +126,18 @@ header a{
 .navegacion ul li a{
     display: block;
     padding: 0.5rem 1rem;
-    transition: all 0.4s linear;
+    transition: all 0.5s linear;
     border-radius: 5px;
 }
 .navegacion li:hover >ul{
     display: block;
+    position: absolute;
+}
+.mas{
+    right: -22px;
+}
+h1{
+    font-family: "Poiret-One";
 }
 .img_1{
     width: 350px;
@@ -155,8 +203,171 @@ aside{
 .divIzquierda{
     grid-area: izquierda;
 }
+.boton{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.Espacio{
+    margin: 8px;
+}
+.principio{
+    text-align: center;
+    margin-top: 45px;
+}
+/*CATEGORIAS*/
+.linea2{
+    border: 4px solid rgb(235, 109, 36);
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.titulo-categorias{
+    text-align: center;
+}
+.parrafo-categoria{
+    margin-right: 60px;
+    justify-content: center;
+}
+.galeria-2{
+    width: 250px;
+}
+.flex-container-galeria-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-hijo-2{
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgb(235, 109, 36), 0 6px 20px 0 black;
+}
+.flex-hijo-2 img{
+    width: 100%;
+    height: auto;
+}
+.cuadroCategorias{
+    width: 100%;
+    height: 35px;
+    background-color: #000;
+    padding-top: 10px;
+    text-align: center;
+    color: #e4dede;
+}
+
+/*HISTORIAS*/
+.imgHistoria{
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgb(238, 64, 64), 0 6px 20px 0 black ;
+}
+.parrHistoria{
+    margin-right: 55px;
+    color: black;
+}
+.lineaHis{
+    border: 3px solid #000;
+    margin-bottom: 40px;
+}
+.flexHijo{
+    text-align: center;
+}
+.linea3{
+    border: 4px solid rgb(238, 64, 64);
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.titulo-historia{
+    text-align: center;
+}
+
+/*+MAS*/
+.linea4{
+    border: 4px solid rgb(67, 219, 53);
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.divFooter{
+    margin-top: 30px;
+}
+.medio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .4s;
+}
+.icon:nth-child(1):hover{
+    box-shadow: 0px 0px 10px #512edf;
+}
+.icon:nth-child(2):hover{
+    box-shadow: 0px 0px 10px #faf62b;
+}
+.icon:nth-child(3):hover{
+    box-shadow: 0px 0px 10px #d86e17;
+}
+.icon:nth-child(4):hover{
+    box-shadow: 0px 0px 10px #ffffff;
+}
+.icon:nth-child(5):hover{
+    box-shadow: 0px 0px 10px #9900ff;
+}
+.icon:nth-child(6):hover{
+    box-shadow: 0px 0px 10px #ff0095;
+}
+/*.fa-facebook-f{
+    color: #2708a0;
+    filter: drop-shadow(0px 0px 10px #2708a0);
+}*/
+.fa-playstation{
+    color: #512edf;
+    filter: drop-shadow(0px 0px 10px #512edf);
+}
+/*.fa-instagram{
+    color: #B3001B;
+    filter: drop-shadow(0px 0px 10px #B3001B);
+}
+.fa-whatsapp{
+    color: #40f99b;
+    filter: drop-shadow(0px 0px 10px #40f99b);
+}
+.fa-twitter{
+    color: #3F8EFC;
+    filter: drop-shadow(0px 0px 10px #3F8EFC);
+}*/
+.fa-chess-queen{
+    color: #faf62b;
+    filter: drop-shadow(0px 0px 10px #faf62b);
+}
+.fa-trophy{
+    color: #d86e17;
+    filter: drop-shadow(0px 0px 10px #d86e17);
+}
+.fa-ghost{
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+.fa-headset{
+    color: #9900ff;
+    filter: drop-shadow(0px 0px 10px #9900ff);
+}
+.fa-dice-d20{
+    color: #ff0095;
+    filter: drop-shadow(0px 0px 10px #ff0095);
+}
+
+
 footer{
-    height: 40px;
+    height: 245px;
     background-color: black !important;
     color: white;
     grid-area: footer;
@@ -166,9 +377,46 @@ footer{
     text-align: center;
     padding-top: 20px;
     width: 100%;
+    margin-top: 80px;
+    box-sizing: border-box;
 }
 @media(max-width:600px){
-    .grid-container{
+    .center{
+        text-align: center;
+    }
+    .galeria{
+        width: 250px;
+        height: 250px;
+    }
+    .flex-container-galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-hijo{
+        width: 300px;
+        margin: 20px;
+    }
+    .flex-hijo img{
+        width: 100%;
+        height: auto;
+    }
+    .flex-hijo p{
+        text-align: justify;
+    }
+    div.galeria img{
+        height: auto;
+    }
+    .imgHistoria{
+        width: 80%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 135px;
+    }
+    /*.grid-container{
         width: 90%;
         margin: 20px auto;
         display: grid;
@@ -185,7 +433,7 @@ footer{
         "derecha derecha derecha derecha"
         "footer footer footer footer"
         "footer footer footer footer";
-    }
+    }*/
     /*.FlexBox{
         display: flex;
         flex-wrap: wrap;
